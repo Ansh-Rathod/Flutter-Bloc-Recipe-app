@@ -98,7 +98,7 @@ class ChipWidget extends StatelessWidget {
         margin: EdgeInsets.all(8),
         padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(20),
           color: Colors.white,
         ),
         child: Text(text,

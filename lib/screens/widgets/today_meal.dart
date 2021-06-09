@@ -217,13 +217,15 @@ class _Listmealtate extends State<ListItemMealPlan> {
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold),
                           ),
+                          SizedBox(height: 10),
                           Text(
                             "Ready in " + widget.meal.readyInMinutes + " Min",
                             style: TextStyle(
                                 color: Colors.green,
                                 fontSize: 14,
                                 fontWeight: FontWeight.bold),
-                          )
+                          ),
+                          SizedBox(height: 10),
                         ],
                       ),
                     ),

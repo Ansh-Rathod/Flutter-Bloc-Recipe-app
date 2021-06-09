@@ -209,11 +209,16 @@ class CustomRecipeInfo extends StatelessWidget {
           NutrientsgoodWidget(
             nutrient: nutrient,
           ),
+          SliverToBoxAdapter(
+            child: SizedBox(
+              height: 10,
+            ),
+          ),
           if (similar.isNotEmpty)
             SliverToBoxAdapter(
               child: Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
+                    const EdgeInsets.symmetric(horizontal: 20.0, vertical: 16),
                 child: Text("Similar items",
                     style:
                         TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),

@@ -141,6 +141,7 @@ class _Listmealtate extends State<ListItem> {
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold),
                           ),
+                          SizedBox(height: 10),
                           Text(
                             "Ready in " + widget.meal.readyInMinutes + " Min",
                             style: TextStyle(

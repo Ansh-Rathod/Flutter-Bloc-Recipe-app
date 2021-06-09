@@ -24,11 +24,19 @@ class HomeScreen extends StatelessWidget {
       builder: (context, state) {
         if (state is HomeScreenLoading) {
           return Scaffold(
+              appBar: AppBar(
+                iconTheme: IconThemeData(color: Colors.black),
+                title: Text(
+                  "Spoonacular",
+                  style: GoogleFonts.lobster(
+                      textStyle: TextStyle(color: Colors.green, fontSize: 20)),
+                ),
+              ),
               body: Center(
                   child: SpinKitCircle(
-            color: Colors.green,
-            size: 50,
-          )));
+                color: Colors.green,
+                size: 50,
+              )));
         } else if (state is HomeScreenSuccess) {
           return Scaffold(
             backgroundColor: athens_gray,

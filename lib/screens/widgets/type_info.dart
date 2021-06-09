@@ -14,10 +14,11 @@ class TypeInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Container(
           decoration: BoxDecoration(
-              color: Colors.white, borderRadius: BorderRadius.circular(10)),
+            color: Colors.white,
+          ),
           child: ExpandableGroup(
               isExpanded: false,
               collapsedIcon: Icon(Icons.arrow_drop_down),

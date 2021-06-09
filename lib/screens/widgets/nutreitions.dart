@@ -15,10 +15,11 @@ class NutrientsWidgets extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Container(
           decoration: BoxDecoration(
-              color: Colors.white, borderRadius: BorderRadius.circular(10)),
+            color: Colors.white,
+          ),
           child: ExpandableGroup(
             isExpanded: false,
             collapsedIcon: Icon(Icons.arrow_drop_down),
@@ -148,10 +149,11 @@ class NutrientsbadWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Container(
           decoration: BoxDecoration(
-              color: Colors.white, borderRadius: BorderRadius.circular(10)),
+            color: Colors.white,
+          ),
           child: ExpandableGroup(
             isExpanded: false,
             collapsedIcon: Icon(Icons.arrow_drop_down),
@@ -210,10 +212,15 @@ class NutrientsgoodWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Container(
           decoration: BoxDecoration(
-              color: Colors.white, borderRadius: BorderRadius.circular(10)),
+            color: Colors.white,
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(10),
+              bottomRight: Radius.circular(10),
+            ),
+          ),
           child: ExpandableGroup(
             isExpanded: false,
             collapsedIcon: Icon(Icons.arrow_drop_down),
@@ -228,17 +235,6 @@ class NutrientsgoodWidget extends StatelessWidget {
               ...nutrient.good.map((nutri) {
                 return ListTile(
                   contentPadding: EdgeInsets.all(10),
-                  // leading: CircularPercentIndicator(
-                  //   radius: 50.0,
-                  //   lineWidth: 5.0,
-                  //   percent: nutri.percentOfDailyNeeds / 100,
-                  //   center: new Text(
-                  //     nutri.percentOfDailyNeeds.toString() + "%",
-                  //     style:
-                  //         TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
-                  //   ),
-                  //   progressColor: Colors.green,
-                  // ),
                   subtitle:
                       Text("${nutri.percentOfDailyNeeds}% of Daily needs."),
                   title: Text(

@@ -356,6 +356,16 @@ class _SearchAutoCompleteTileState extends State<SearchAutoCompleteTile> {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.grey,
+                boxShadow: [
+                  BoxShadow(
+                      spreadRadius: 0.0,
+                      blurRadius: 3,
+                      offset: Offset(
+                        0, // Move to right 10  horizontally
+                        2.0, // Move to bottom 10 Vertically
+                      ),
+                      color: Colors.grey.withOpacity(.6))
+                ],
                 image: DecorationImage(
                     fit: BoxFit.cover,
                     image: CachedNetworkImageProvider(widget.list.image))),

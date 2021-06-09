@@ -208,12 +208,9 @@ class _AppBarWidgetState extends State<AppBarWidget> {
       title: Opacity(
         opacity: (0 + widget.shrinkOffset / widget.expandedHeight),
         child: Text(
-          widget.title,
-          style: GoogleFonts.lato(
-              textStyle: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black)),
+          "Spoonacular",
+          style: GoogleFonts.lobster(
+              textStyle: TextStyle(color: Colors.green, fontSize: 20)),
         ),
       ),
     );
