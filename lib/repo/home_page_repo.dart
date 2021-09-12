@@ -26,7 +26,7 @@ class HomePageRepo {
         .then((value) async {
       if (!value.exists) {
         var url = Uri.parse(
-            'https://api.spoonacular.com/mealplanner/generate?timeFrame=day&apiKey=${apiKey[Random().nextInt(14)]}');
+            'https://api.spoonacular.com/mealplanner/generate?timeFrame=day&apiKey=$apiKey');
         var response = await http.get(url);
         var body = json.decode(response.body);
         if (response.statusCode == 200) {
@@ -58,7 +58,7 @@ class HomePageRepo {
 
   Future<FoodTypeList> getBrackfast(String type, int no) async {
     var url = Uri.parse(
-        'https://api.spoonacular.com/recipes/random?number=$no&tags=$type&apiKey=${apiKey[Random().nextInt(14)]}');
+        'https://api.spoonacular.com/recipes/random?number=$no&tags=$type&apiKey=$apiKey');
     var response = await http.get(url);
     var body = json.decode(response.body);
     print("get random food: " + response.statusCode.toString());

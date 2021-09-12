@@ -12,7 +12,7 @@ class SearchRepo {
 
   Future<SearchResultList> getSearchList(String type, int no) async {
     var url = Uri.parse(
-        'https://api.spoonacular.com/recipes/complexSearch?query=$type&number=$no&apiKey=${apiKey[Random().nextInt(14)]}');
+        'https://api.spoonacular.com/recipes/complexSearch?query=$type&number=$no&apiKey=$apiKey');
     var response = await http.get(url);
     var body = json.decode(response.body);
     print("get random food: " + response.statusCode.toString());
@@ -32,7 +32,7 @@ class SearchRepo {
 
   Future<SearchAutoCompleteList> getAutoCompleteList(String searchText) async {
     var url = Uri.parse(
-        'https://api.spoonacular.com/recipes/autocomplete?number=100&query=$searchText&apiKey=${apiKey[Random().nextInt(14)]}');
+        'https://api.spoonacular.com/recipes/autocomplete?number=100&query=$searchText&apiKey=$apiKey');
     var response = await http.get(url);
     var body = json.decode(response.body);
     print("get random food: " + response.statusCode.toString());

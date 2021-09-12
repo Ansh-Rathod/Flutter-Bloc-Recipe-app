@@ -14,7 +14,7 @@ class RandomFoodRepo {
   final List<String> apiKey = ApiKey.keys;
   Future<Recipe> getRandomFood() async {
     var url = Uri.parse(
-        'https://api.spoonacular.com/recipes/random?number=1&apiKey=${apiKey[Random().nextInt(14)]}');
+        'https://api.spoonacular.com/recipes/random?number=1&apiKey=$apiKey');
     var response = await http.get(url);
     var body = json.decode(response.body);
     print("get random food: " + response.statusCode.toString());
