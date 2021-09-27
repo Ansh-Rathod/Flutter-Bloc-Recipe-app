@@ -55,7 +55,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com/downloa
 
 ```
 # Clone this repository
-$ git clone https://github.com/Appii00/Flutter-Bloc-Recipe-app.git
+$ git clone https://github.com/Ansh-Rathod/Flutter-Bloc-Recipe-app.git
 
 # Go into the repository
 $ cd Flutter-Bloc-Recipe-App
