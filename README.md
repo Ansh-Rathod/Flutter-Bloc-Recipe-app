@@ -38,15 +38,15 @@ Here,i created this app with [Spoonacular open source food api](https://spoonacu
 - url_launcher: ^6.0.4
 
 <p align="center">
-<img src="screenshots\Screenshot_20210609-114441.jpg" width="30%">
-<img src="screenshots\Screenshot_20210609-114634.jpg" width="30%">
-<img src="screenshots\Screenshot_20210609-114505.jpg" width="30%">
-<img src="screenshots\Screenshot_20210609-114521.jpg" width="30%">
-<img src="screenshots\Screenshot_20210609-114531.jpg" width="30%">
-<img src="screenshots\Screenshot_20210609-114536.jpg" width="30%">
-<img src="screenshots\Screenshot_20210609-114548.jpg" width="30%">
-<img src="screenshots\Screenshot_20210609-114557.jpg" width="30%">
-<img src="screenshots\Screenshot_20210609-114622.jpg" width="30%">
+<img src="screenshots/Screenshot_20210609-114441.jpg" width="30%">
+<img src="screenshots/Screenshot_20210609-114634.jpg" width="30%">
+<img src="screenshots/Screenshot_20210609-114505.jpg" width="30%">
+<img src="screenshots/Screenshot_20210609-114521.jpg" width="30%">
+<img src="screenshots/Screenshot_20210609-114531.jpg" width="30%">
+<img src="screenshots/Screenshot_20210609-114536.jpg" width="30%">
+<img src="screenshots/Screenshot_20210609-114548.jpg" width="30%">
+<img src="screenshots/Screenshot_20210609-114557.jpg" width="30%">
+<img src="screenshots/Screenshot_20210609-114622.jpg" width="30%">
 
 </p>
 
@@ -68,4 +68,3 @@ $ flutter packages get
 $ flutter run
 ```
 
-**Download _.apk_ file from [Here](https://mega.nz/file/C8tREaTA#pllnELyH63h7gpZCMWNwji4KoAaiYLSq9arQ7YgQC-o)**
