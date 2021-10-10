@@ -73,7 +73,3 @@ $ flutter packages get
 $ flutter run
 ```
 
-// git branch -m master 1.0.1
-// git fetch origin
-// git branch -u origin/1.0.1 1.0.1
-// git remote set-head origin -a
