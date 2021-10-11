@@ -14,13 +14,12 @@ const RANDOM_RACIPE_PATH = '/random?number=1';
 
 class GetRandomRecipe {
   // ignore: non_constant_identifier_names
-  var key = ApiKey.keys;
+  var key = ApiKey.key;
 
   final dio = Dio();
 
   Future<List<dynamic>> getRecipe() async {
-    var infoUrl =
-        BASE_URL + RANDOM_RACIPE_PATH + '&apiKey=' + key[Random().nextInt(14)];
+    var infoUrl = BASE_URL + RANDOM_RACIPE_PATH + '&apiKey=' + key;
     var id = '';
 
     Recipe racipeInfo;
@@ -39,15 +38,9 @@ class GetRandomRecipe {
       throw Failure(code: res.statusCode!, message: res.statusMessage!);
     }
 
-    var similarUrl =
-        BASE_URL + id + SIMILAR_PATH + '&apiKey=' + key[Random().nextInt(14)];
-    var equipmentUrl = BASE_URL +
-        id +
-        EQUIPMENTS_PATH +
-        '&apiKey=' +
-        key[Random().nextInt(14)];
-    var nutritionUrl =
-        BASE_URL + id + NUTRITION_PATH + '&apiKey=' + key[Random().nextInt(14)];
+    var similarUrl = BASE_URL + id + SIMILAR_PATH + '&apiKey=' + key;
+    var equipmentUrl = BASE_URL + id + EQUIPMENTS_PATH + '&apiKey=' + key;
+    var nutritionUrl = BASE_URL + id + NUTRITION_PATH + '&apiKey=' + key;
 
     final response = await Future.wait([
       dio.get(similarUrl),

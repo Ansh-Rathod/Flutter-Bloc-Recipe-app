@@ -21,25 +21,15 @@ const SIMILAR_PATH = '/similar?';
 
 class GetRecipeInfo {
   // ignore: non_constant_identifier_names
-  var key = ApiKey.keys;
+  var key = ApiKey.key;
 
   final dio = Dio();
 
   Future<List<dynamic>> getRecipeInfo(String id) async {
-    var infoUrl = BASE_URL +
-        id +
-        INFORMATION_PATH +
-        '&apiKey=' +
-        key[Random().nextInt(14)];
-    var similarUrl =
-        BASE_URL + id + SIMILAR_PATH + '&apiKey=' + key[Random().nextInt(14)];
-    var equipmentUrl = BASE_URL +
-        id +
-        EQUIPMENTS_PATH +
-        '&apiKey=' +
-        key[Random().nextInt(14)];
-    var nutritionUrl =
-        BASE_URL + id + NUTRITION_PATH + '&apiKey=' + key[Random().nextInt(14)];
+    var infoUrl = BASE_URL + id + INFORMATION_PATH + '&apiKey=' + key;
+    var similarUrl = BASE_URL + id + SIMILAR_PATH + '&apiKey=' + key;
+    var equipmentUrl = BASE_URL + id + EQUIPMENTS_PATH + '&apiKey=' + key;
+    var nutritionUrl = BASE_URL + id + NUTRITION_PATH + '&apiKey=' + key;
 
     Recipe racipeInfo;
     SimilarList similarList;
