@@ -7,16 +7,13 @@ import 'package:recipia/models/food_type.dart';
 import 'package:recipia/repo/get_recipe_info.dart';
 
 class GetHomeRecipes {
-  var key = ApiKey.keys;
+  var key = ApiKey.key;
   // ignore: non_constant_identifier_names
 
   final dio = Dio();
 
   Future<FoodTypeList> getRecipes(String type, int no) async {
-    var url = BASE_URL +
-        "/random?number=$no&tags=$type" +
-        '&apiKey=' +
-        key[Random().nextInt(14)];
+    var url = BASE_URL + "/random?number=$no&tags=$type" + '&apiKey=' + key;
     final response = await dio.get(url);
 
     if (response.statusCode == 200) {

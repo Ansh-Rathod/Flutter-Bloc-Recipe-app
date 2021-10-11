@@ -1,21 +1,5 @@
 import 'dart:math';
 
 class ApiKey {
-  static List<String> keys = [
-    '7045c31bb90845d787adeb75221de1e8',
-    'e7911e6a724640ce9eafb79de5bb6a6d',
-    '2ced67d191624c0386d1ea37b48d5ae3',
-    '09f6661396fb4091b52bc2a6a8a0a12c',
-    'f51d19f9b873456f89c84994dfb120e6',
-    '75fb3d113f50414080148b6985d7ae1e',
-    '50fe215992e542d8bb0985a4dbaf2076',
-    'd8201757b01e46ea8e95cf5b1d95986f',
-    '0cd6a80a8f6640f9afb58f332bf3c99b',
-    'e4546f05db3a43babaa73c820770a945',
-    'e8c496ffb63a47f4be8d43a67f46f23c',
-    '2e02501e9cc94a5fb38d2495e5b77fcf',
-    '349345573fc642649744c349fd66faa6',
-    '47adce383cb440f29308740c26fc388e',
-    'cde80ce8c59642009b9ca60f6c239a8a',
-  ];
+  static String key = 'Api key';
 }

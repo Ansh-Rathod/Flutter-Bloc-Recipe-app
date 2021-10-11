@@ -8,11 +8,11 @@ import 'package:recipia/models/faliure.dart';
 import 'package:recipia/models/search_results.dart';
 
 class SearchRepo {
-  var key = ApiKey.keys;
+  var key = ApiKey.key;
 
   Future<SearchResultList> getSearchList(String type, int no) async {
     var url =
-        'https://api.spoonacular.com/recipes/complexSearch?query=$type&number=$no&apiKey=${key[Random().nextInt(14)]}';
+        'https://api.spoonacular.com/recipes/complexSearch?query=$type&number=$no&apiKey=${key}';
 
     var response = await Dio().get(url);
 
@@ -28,7 +28,7 @@ class SearchRepo {
 
   Future<SearchAutoCompleteList> getAutoCompleteList(String searchText) async {
     var url =
-        'https://api.spoonacular.com/recipes/autocomplete?number=100&query=$searchText&apiKey=${key[Random().nextInt(14)]}';
+        'https://api.spoonacular.com/recipes/autocomplete?number=100&query=$searchText&apiKey=${key}';
     var response = await Dio().get(url);
 
     if (response.statusCode == 200) {
