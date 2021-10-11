@@ -30,16 +30,16 @@ class GetRecipeInfo {
         id +
         INFORMATION_PATH +
         '&apiKey=' +
-        key[Random().nextInt(14)];
+        key;
     var similarUrl =
-        BASE_URL + id + SIMILAR_PATH + '&apiKey=' + key[Random().nextInt(14)];
+        BASE_URL + id + SIMILAR_PATH + '&apiKey=' + key;
     var equipmentUrl = BASE_URL +
         id +
         EQUIPMENTS_PATH +
         '&apiKey=' +
-        key[Random().nextInt(14)];
+        key;
     var nutritionUrl =
-        BASE_URL + id + NUTRITION_PATH + '&apiKey=' + key[Random().nextInt(14)];
+        BASE_URL + id + NUTRITION_PATH + '&apiKey=' + key;
 
     Recipe racipeInfo;
     SimilarList similarList;

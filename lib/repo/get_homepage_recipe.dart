@@ -16,7 +16,7 @@ class GetHomeRecipes {
     var url = BASE_URL +
         "/random?number=$no&tags=$type" +
         '&apiKey=' +
-        key[Random().nextInt(14)];
+        key;
     final response = await dio.get(url);
 
     if (response.statusCode == 200) {

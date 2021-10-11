@@ -18,7 +18,7 @@
 - removed useless login/signUp.
 - Added local database.
 
-#### note:- This is latest version(v1.0.1) of app. you can go to lower version(1.0.0) by changing branch.
+**note:- This is latest version(v1.0.1) of app. you can go to lower version(1.0.0) by changing branch to main**.
 
 ## App Information
 

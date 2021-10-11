@@ -20,7 +20,7 @@ class GetRandomRecipe {
 
   Future<List<dynamic>> getRecipe() async {
     var infoUrl =
-        BASE_URL + RANDOM_RACIPE_PATH + '&apiKey=' + key[Random().nextInt(14)];
+        BASE_URL + RANDOM_RACIPE_PATH + '&apiKey=' + key;
     var id = '';
 
     Recipe racipeInfo;
@@ -40,14 +40,14 @@ class GetRandomRecipe {
     }
 
     var similarUrl =
-        BASE_URL + id + SIMILAR_PATH + '&apiKey=' + key[Random().nextInt(14)];
+        BASE_URL + id + SIMILAR_PATH + '&apiKey=' + key;
     var equipmentUrl = BASE_URL +
         id +
         EQUIPMENTS_PATH +
         '&apiKey=' +
-        key[Random().nextInt(14)];
+        key;
     var nutritionUrl =
-        BASE_URL + id + NUTRITION_PATH + '&apiKey=' + key[Random().nextInt(14)];
+        BASE_URL + id + NUTRITION_PATH + '&apiKey=' + key;
 
     final response = await Future.wait([
       dio.get(similarUrl),
