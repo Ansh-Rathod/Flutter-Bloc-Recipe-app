@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "865281874695",
+    "project_id": "spoonacular-api",
+    "storage_bucket": "spoonacular-api.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865281874695:android:c8c2042e72e79de9e443a2",
+        "android_client_info": {
+          "package_name": "com.example.racipi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865281874695-pdfjhovvjiko9j0nofdlfr6cef0oifj4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ6QgoCMvcN9BrXnn1Wi0y_IqqlP6ZEOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865281874695-pdfjhovvjiko9j0nofdlfr6cef0oifj4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

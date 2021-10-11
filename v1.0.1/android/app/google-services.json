@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "878331463140",
+    "project_id": "deeplinking-f31b9",
+    "storage_bucket": "deeplinking-f31b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878331463140:android:35990475f30826078f33f1",
+        "android_client_info": {
+          "package_name": "com.example.recipia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878331463140-f4lprruqjdc8k13tmoqbm50ckbhnht0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsy5E9q2AX4mE217zW_zstz6PePAFKvk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878331463140-f4lprruqjdc8k13tmoqbm50ckbhnht0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
