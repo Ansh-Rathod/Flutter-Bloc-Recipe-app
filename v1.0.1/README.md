@@ -43,15 +43,15 @@ Here,i created this app with [Spoonacular open source food api](https://spoonacu
 - url_launcher: ^6.0.12
 
 <p align="center">
-<img src="screenshots\Screenshot_20211010-170957.jpg" width="30%">
-<img src="screenshots\Screenshot_20211010-171015.jpg" width="30%">
-<img src="screenshots\Screenshot_20211010-171028.jpg" width="30%">
-<img src="screenshots\Screenshot_20211010-171048_Android System.jpg" width="30%">
-<img src="screenshots\Screenshot_20211010-171101.jpg" width="30%">
-<img src="screenshots\Screenshot_20211010-171106.jpg" width="30%">
-<img src="screenshots\Screenshot_20211010-171110.jpg" width="30%">
-<img src="screenshots\Screenshot_20211010-171121.jpg" width="30%">
-<img src="screenshots\Screenshot_20211010-171150.jpg" width="30%">
+<img src="screenshots/Screenshot_20211010-170957.jpg" width="30%">
+<img src="screenshots/Screenshot_20211010-171015.jpg" width="30%">
+<img src="screenshots/Screenshot_20211010-171028.jpg" width="30%">
+<img src="screenshots/Screenshot_20211010-171048_Android System.jpg" width="30%">
+<img src="screenshots/Screenshot_20211010-171101.jpg" width="30%">
+<img src="screenshots/Screenshot_20211010-171106.jpg" width="30%">
+<img src="screenshots/Screenshot_20211010-171110.jpg" width="30%">
+<img src="screenshots/Screenshot_20211010-171121.jpg" width="30%">
+<img src="screenshots/Screenshot_20211010-171150.jpg" width="30%">
 
 </p>
 
